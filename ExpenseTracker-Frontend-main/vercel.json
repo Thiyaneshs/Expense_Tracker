@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://expense-tracker-backend-3sm9.onrender.com/api/:path*"
+      "destination": "https://expense-tracker-gaoy.onrender.com/api/:path*"
     },
     {
       "source": "/uploads/:path*",
-      "destination": "https://expense-tracker-backend-3sm9.onrender.com/uploads/:path*"
+      "destination": "https://expense-tracker-gaoy.onrender.com/uploads/:path*"
     },
     {
       "source": "/(.*)",
