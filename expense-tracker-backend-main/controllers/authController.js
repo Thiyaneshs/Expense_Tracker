@@ -21,7 +21,7 @@ const generateToken=(id)=>{
 
     let profileImageUrl;
     if (req.file) {
-    profileImageUrl = `${process.env.BASE_URL}/uploads/${req.file.filename}`;
+    profileImageUrl = `${process.env.BACKEND_URL}/uploads/${req.file.filename}`;
   }
 
 
