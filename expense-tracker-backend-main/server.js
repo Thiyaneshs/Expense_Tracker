@@ -13,9 +13,18 @@ const app = express();
 connectDB();
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173"
-    ],
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        "http://localhost:5173",
+        "https://expense-tracker-gaoy.onrender.com",
+      ];
+      // Allow requests with no origin (mobile apps, curl, etc.) or matching origins
+      if (!origin || allowedOrigins.some(o => origin.startsWith(o)) || /\.vercel\.app$/.test(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
