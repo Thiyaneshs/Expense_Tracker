@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment Variables
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Build Folders
+dist/
+build/
+**/dist/
+**/build/
+
+# Vercel
+.vercel/
+
+# Uploads (optional - user uploaded files save pannina)
+uploads/
+**/uploads/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Coverage
+coverage/
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
