@@ -61,7 +61,7 @@ const SignUp = () => {
       const { token, user } = response.data;
 
       if (token) {
-        localStorage.setItem("token", token);
+        localStorage.setItem("accessToken", token);
         updateUser(user);
         navigate("/dashboard");
       }
